@@ -1,0 +1,27 @@
+h1{
+	padding-top: 75px;
+	padding-bottom: 10px;
+}
+
+html body{
+	background-color: #F8F8F8 ;
+}
+
+div.alert{
+	margin-bottom: 25px;
+}
+
+button.btn{
+	margin: 25px 0;
+}
+
+.navbar-inverse .nav > li > a.inactive:hover	{
+	color: #999;
+	cursor: default;
+}
+
+.recompense{
+	background-image: url("../img/nice_car.jpg");
+	width: 640px; height: 366px;
+	border-radius: 4px;
+}
