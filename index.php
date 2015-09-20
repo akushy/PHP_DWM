@@ -17,7 +17,7 @@
 			<div class="container">
 			<a class="brand" href="#">Exercices de PHP</a>
 			<ul class="nav">
-				<li><a href="#">Code Github</a></li>
+				<li><a href="https://github.com/akushy/PHP_DWM">Code Github</a></li>
 				<li><a class="inactive" href="#">Plus d'exercices</a></li>
 				<li><a class="inactive" href="#">Pense-bête</a></li>
 			</ul>
