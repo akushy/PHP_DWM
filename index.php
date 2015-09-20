@@ -37,69 +37,86 @@
 					<p>Tu me passe l'auto pour que je te fasse le plein ?</p>
 					<label class="radio">
 						<input type="radio" name="question01" 
-						<?php if (isset($_GET["question01"])) { if ($_GET["question01"] == "oui") { $i++; } } ?>
+						<?php if (isset($_GET["question01"])) { if ($_GET["question01"] == "oui") { $i++; } }
+						if( $_GET['question01']=='oui'){ echo 'checked="checked"';} ?>
 						value="oui" required>Oui
 					</label>
 					<label class="radio">
-						<input type="radio" name="question01" value="non">Non
+						<input type="radio" name="question01" 
+						<?php if( $_GET['question01']=='non'){ echo 'checked="checked"';} ?>
+						value="non">Non
 					</label>
-
 					<p>Tu me passe l'auto pour que je tire des freins à main dans la neige ?</p>
 					<label class="radio">
-						<input type="radio" name="question02" value="oui" required>Oui
+						<input type="radio" name="question02" 
+						<?php if( $_GET['question02']=='oui'){ echo 'checked="checked"';} ?>
+						value="oui" required>Oui
 					</label>
 					<label class="radio">
 						<input type="radio" name="question02" 
-						<?php if (isset($_GET["question02"])) { if ($_GET["question02"] == "non") { $i++; } } ?>
+						<?php if (isset($_GET["question02"])) { if ($_GET["question02"] == "non") { $i++; } } 
+						if( $_GET['question02']=='non'){ echo 'checked="checked"';} ?>
 						value="non">Non
 					</label>
-
+	
 					<p>Tu me passe l'auto pour que j'aille à l'auto-sécurité à ta place ?</p>
 					<label class="radio">
 						<input type="radio" name="question03" 
-						<?php if (isset($_GET["question03"])) { if ($_GET["question03"] == "oui") { $i++; } } ?>
+						<?php if (isset($_GET["question03"])) { if ($_GET["question03"] == "oui") { $i++; } }
+						if( $_GET['question03']=='oui'){ echo 'checked="checked"';} ?>
 						value="oui" required>Oui
 					</label>
 					<label class="radio">
-						<input type="radio" name="question03" value="non">Non
-					</label>
+						<input type="radio" name="question03" 
+						<?php if( $_GET['question03']=='non'){ echo 'checked="checked"';} ?>
+						value="non">Non</label>
 				</div>
 			
 				<div class="span6">
 					<p>Tu me passe l'auto pour que je l'amène au car-wash ?</p>
 					<label class="radio">
 						<input type="radio" name="question04" 
-						<?php if (isset($_GET["question04"])) { if ($_GET["question04"] == "oui") { $i++; } } ?>
+						<?php if (isset($_GET["question04"])) { if ($_GET["question04"] == "oui") { $i++; } }
+						if( $_GET['question04']=='oui'){ echo 'checked="checked"';} ?>
 						value="oui" required>Oui
 					</label>
 					<label class="radio">
-						<input type="radio" name="question04" value="non">Non
+						<input type="radio" name="question04"
+						<?php if( $_GET['question04']=='non'){ echo 'checked="checked"';} ?>
+						value="non">Non
+						
 					</label>
-
+	
 					<p>Tu me passe l'auto pour que je la pousse à fond sur les autoroutes Allemandes ?</p>
 					<label class="radio">
-						<input type="radio" name="question05" value="oui" required>Oui
+						<input type="radio" name="question05" 
+						<?php if( $_GET['question05']=='oui'){ echo 'checked="checked"';} ?>
+						value="oui" required>Oui
 					</label>
 					<label class="radio">
 						<input type="radio" name="question05" 
-						<?php if (isset($_GET["question05"])) { if ($_GET["question05"] == "non") { $i++; } } ?>
+						<?php if (isset($_GET["question05"])) { if ($_GET["question05"] == "non") { $i++; } }
+						if( $_GET['question05']=='non'){ echo 'checked="checked"';} ?>
 						value="non">Non
 					</label>
-
+	
 					<p>Tu me passe l'auto pour que mon pote puisse aller en vacances avec ?</p>
 					<label class="radio">
-						<input type="radio" name="question06" value="oui" required>Oui
+						<input type="radio" name="question06" 
+						<?php if( $_GET['question06']=='oui'){ echo 'checked="checked"';} ?>
+						value="oui" required>Oui
 					</label>
 					<label class="radio">
 						<input type="radio" name="question06" 
-						<?php if (isset($_GET["question06"])) { if ($_GET["question06"] == "non") { $i++; } } ?>
+						<?php if (isset($_GET["question06"])) { if ($_GET["question06"] == "non") { $i++; } }
+						if( $_GET['question06']=='non'){ echo 'checked="checked"';} ?>
 						value="non">Non
 					</label>
 				</div>
 			</div>
-
+	
 			<p><button class="btn btn-primary" type="submit">Demander l'auto !</button></p>
-
+	
 			<?php
 				if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty( $_GET )) {
 					if($i <= 2){
@@ -126,7 +143,7 @@
 			?>
 		</form>
 	</div>
-
+	
 	<!-- SCRIPT -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
