@@ -31,7 +31,7 @@
 			Réponds correctement aux qustions ci-dessous afin qu'il te passes son bolide. <br/>
 			Bonne chance, il est pas de bonne humeur aujourd'hui !</p>
 		</div>
-		<form method="_GET">
+		<form method="GET">
 			<div class="row">
 				<div class="span6">
 					<p>Tu me passe l'auto pour que je te fasse le plein ?</p>
